@@ -1,0 +1,135 @@
+#navlist{
+    width: 100%;
+    /* margin-left: 30px;
+    margin-right: 50px; */
+    padding:15px;
+    list-style: none;
+    font-size:2.5rem;
+    display:flex;
+    justify-content: space-between;  
+    align-items: center;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.contianer{
+    height:100vh;
+    width:100vw;
+    overflow-x:none;
+    background: rgb(148,233,211);
+    background: linear-gradient(90deg, rgba(148,233,211,1) 69%, rgba(100,176,254,0) 90%);
+    
+
+}
+.navtag{
+    width:225vh;
+      /* background-color: rgb(113, 113, 192); */
+      background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,85,121,1) 61%, rgba(0,212,255,1) 100%);
+      min-height: 80px;
+      display:flex;
+      justify-content: center;  
+      align-items: center;
+      position: relative;
+}
+#navlogo{
+font-size:2.8rem;  
+color:aqua;                               
+}
+nav{
+    width:100%;
+    overflow-x: none;
+    padding-right:2rem;
+}
+a{
+    text-decoration: none;
+    color:rgb(24, 86, 86);
+}
+#navitems{
+    display: flex;
+    gap: 40px;
+   
+}
+.contentbox{
+    width:60%;
+    margin:auto;
+    /* border:1px solid black; */
+    display:flex;
+    flex-direction:column;
+    gap:100px;
+    padding:3rem;
+    box-shadow:3px 3px 30px black;
+}
+.footerbox{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,85,121,1) 61%, rgba(0,212,255,1) 100%);
+    text-align:center;
+    min-height: 40px;
+    }
+    .footerbox p{
+        color: aqua;
+     font-size:2rem;
+    
+    }
+    .item{
+display:flex;
+justify-content: space-around;
+align-items:center;
+
+    }
+    .rightbox img{
+        height:100%;
+        height:400px;
+        width:300px;
+        border-radius: 20px;
+        transition:all 0.6 linear 0s;
+        padding:0px;
+    }
+    .rightbox:hover{
+        transform: scale(1.1);
+    }
+    .leftbox{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+        color:brown
+    }
+    .leftbox h2{
+        font-size:2rem;
+    }
+    .ingbox{
+        font-size:1.1rem;
+    }
+    .recipebox{
+        font-size:1.1rem;
+    }
+    .rightbox{
+        position:relative;
+        overflow:hidden;
+        transition:all 0.6 linear 0s;
+        box-shadow:1px 1px 10px black;
+        border-radius: 20px;
+
+    }
+    .rightbox .overlay{
+        position:absolute;
+        top:0;
+        left:0;
+        height:100%;
+        width:100%;
+        background-color: rgba(82, 74, 74, 0.752);
+        display:flex;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+        opacity:0;
+        transition:all 0.3s linear 0s;
+    }
+    .rightbox:hover .overlay{
+      opacity:1;  
+    }
+    .rightbox .overlay span{
+        font-size:1.2rem;
+        color: white;
+    }
